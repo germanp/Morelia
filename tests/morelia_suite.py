@@ -533,7 +533,6 @@ class MoreliaSuite(TestCase):
     
         html = '<xml>' + rep + '</xml>'
         report_file = os.path.join(os.path.dirname(__file__), 'report.html')
-        print report_file
         open(report_file, 'w').write(html)
           # ERGO assert_xml with <html> forgives - crack down on that!
         
