@@ -532,7 +532,9 @@ class MoreliaSuite(TestCase):
         assert 1 == rep.count(once)
     
         html = '<xml>' + rep + '</xml>'
-        open('/home/phlip/morelia/yo.html', 'w').write(html)
+        report_file = os.path.join(os.path.dirname(__file__), 'report.html')
+        print report_file
+        open(report_file, 'w').write(html)
           # ERGO assert_xml with <html> forgives - crack down on that!
         
         self.assert_xml(html, '/xml[ count(descendant::div) > %i ]' % (div_count - 1))
