@@ -569,7 +569,6 @@ def _clean_html(string):
 #  ERGO  moralia should try the regex first then the step name
 #  ERGO  pay for "Bartender" by Sacred Hoop
 
-
 if __name__ == '__main__':
     import os
     os.system('python ../tests/morelia_suite.py')   #  NOTE  this might not return the correct shell value

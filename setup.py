@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from distutils.core import setup
-import morelia
+from morelia import morelia
 
 setup(name         = 'Morelia',
       version      = morelia.__version__,
@@ -12,7 +12,7 @@ setup(name         = 'Morelia',
       author       = 'Phlip',
       author_email = 'phlip2005@gmail.com',
       url          = 'http://c2.com/cgi/wiki?MoreliaViridis',
-      py_modules   = ['morelia'],
+      packages     = ['morelia'],
       keywords     = "test bdd behavior",
       classifiers  = [
         "Intended Audience :: Developers",
